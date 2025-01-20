@@ -1,66 +1,51 @@
 import React from "react";
-import { 
-  Link,
-} from "carbon-components-react";
-import defineBlock from "../../utils/defineBlock";
-// import { links } from '../../../constants';
-
-const bem = defineBlock('EducationPage');
+import { Link } from "carbon-components-react";
+import { Col, Row } from "react-bootstrap";
+import CWRU from "../../Assets/cwru.jpeg";
+import USC from "../../Assets/USC.jpeg";
 
 function Education() {
   return (
-    <div>
-    <div>
-      <div className={bem('uni-info', 'CWRU')}>
-        <Link
-          className={bem('uni-logo')}
-          href={"linkedin.com"}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="static/images/education/CWRU_logo.svg"
-            alt="CWRU logo"
-          />
-        </Link>
-        <div className={bem(['uni-row', 'degree'])}>
-          Bachelor of Science in Biomedical Engineering
-        </div>
-        <div className={bem(['uni-row', 'graduation'])}>
-          Awarded in May 2018
-        </div>
-      </div>
-      <div className={bem('uni-spacer')} />
-      <div className={bem('uni-info', 'UCT')}>
-        <Link
-          className={bem('uni-logo')}
-          href={"linkedin.com"}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src="static/images/education/UCT_logo.svg"
-            alt="USC logo"
-          />
-        </Link>
-        <div className={bem(['uni-row', 'reason'])}>
-          <Link
-            href={"linkedin.com"}
+    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+        <Col xs={4} md={5} className="tech-icons">
+            <Link
             target="_blank"
             rel="noreferrer"
-          >
-            IES Study Abroad
-          </Link> program in South Africa
-        </div>
-        <div className={bem(['uni-row', 'degree'])}>
-          Master of Science in Computer Science
-        </div>
-        <div className={bem(['uni-row', 'graduation'])}>
-          Awarded in May 2020
-        </div>
-      </div>
-    </div>
-    </div>
+            >
+            <img src={USC} alt="USC logo"/>
+            </Link>
+            <div className="university-heading">
+                University of Southern California
+            </div>
+            <div className="university-degree">
+                Master of Science in Computer Science
+            </div>
+            <div className="university-date">
+                Awarded in May 2020
+            </div>
+        </Col>
+
+        <Col xs={4} md={5} className="tech-icons">
+            <Link
+                target="_blank"
+                rel="noreferrer"
+                >
+                <img
+                    src={CWRU}
+                    alt="CWRU logo"
+                />
+            </Link>
+            <div className="university-heading">
+                Case Western Reserve University
+            </div>
+            <div className="university-degree">
+                Bachelor of Science in Biomedical Engineering
+            </div>
+            <div className="university-date">
+                Awarded in May 2018
+            </div>
+        </Col>
+    </Row>      
   );
 }
 

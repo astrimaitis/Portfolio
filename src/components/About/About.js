@@ -13,6 +13,9 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
+      <h1 className="project-heading">
+        <strong className="purple">About Me</strong>
+      </h1>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -37,10 +40,19 @@ function About() {
         </Row>
 
         <h1 className="project-heading">
-          <strong className="purple">Education </strong>
+          <strong className="purple">Jobs Worked</strong>
+        </h1>
+
+
+        <h1 className="project-heading">
+          <strong className="purple">Degrees Awarded</strong>
         </h1>
 
         <Education />
+
+        <h1 className="project-heading">
+          <strong className="purple">Certifications Awarded</strong>
+        </h1>
 
 
         <h1 className="project-heading">

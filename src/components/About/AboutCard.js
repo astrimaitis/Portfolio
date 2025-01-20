@@ -11,8 +11,6 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Andrew Strimaitis</span>
             from <span className="purple">San Francisco Bay Area.</span>
             <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
             I have degrees in Biomedical Engineering from Case Western Reserve University and Computer Science from University of Southern California.
             <br />
             <br />
@@ -32,11 +30,6 @@ function AboutCard() {
               <ImPointRight />Traveling
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

@@ -598,6 +598,28 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+.university-heading {
+  color: white !important;
+  font-size: 0.45em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.university-degree {
+  color: white !important;
+  font-size: 0.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
+.university-date {
+  color: white !important;
+  font-size: 0.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
